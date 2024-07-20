@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="calculator-container">
+            <div id="screen-div">
+                <input id="screen" type="text">
+                <input id="screen2" type="text">
+            </div>
+            <div id="button-area">
+                <div id="control">
+                        <div class="c-col">
+                            <button onclick="cle()">AC</button>
+                        </div>
+                        <div class="c-col">
+                            <button onclick="del()">Del</button>
+                        </div>
+                        <div id="equl-bu">
+                            <button onclick="eql()">=</button>
+                        </div>       
+                        
+                </div>
+                <div id="num-container">
+                    <div class="num-col">
+                        <div class="nums">
+                            <button onclick="button_click(7)">7</button>
+                        </div>
+                        <div class="nums">
+                            <button onclick="button_click(8)">8</button>
+                        </div>
+                        <div class="nums">
+                            <button onclick="button_click(9)">9</button>
+                        </div>
+                    </div>
+                    <div class="num-col">
+                        <div class="nums">
+                            <button onclick="button_click(4)">4</button>
+                        </div>
+                        <div class="nums">
+                            <button onclick="button_click(5)">5</button>
+                        </div>
+                        <div class="nums">
+                            <button onclick="button_click(6)">6</button>
+                        </div>
+                    </div>
+                    <div class="num-col">
+                        <div class="nums">
+                            <button onclick="button_click(1)">1</button>
+                        </div>
+                        <div class="nums">
+                            <button onclick="button_click(2)">2</button>
+                        </div>
+                        <div class="nums">
+                            <button onclick="button_click(3)">3</button>
+                        </div>
+                    </div>
+                    <div class="num-col">
+                        <div class="nums">
+                            <button onclick="button_click(1)">0</button>
+                        </div>
+                        <div class="nums">
+                            <button onclick="button_click('00')">00</button>
+                        </div>
+                        <div class="nums">
+                            <button onclick="button_click('.')">.</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="operator-container">
+                    <div class="op-col">
+                            <div class="op-nums">
+                                <button onclick="button_click('/')">/</button>
+                            </div>
+                            <div class="op-nums">
+                                <button onclick="button_click('*')">x</button>
+                            </div>
+                            <div class="op-nums">
+                                <button onclick="button_click('-')">-</button>
+                            </div>
+                            <div class="op-nums">
+                                <button onclick="button_click('+')">+</button>
+                            </div>
+                    </div>
+                 
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</body>
+</html>
